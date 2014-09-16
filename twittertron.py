@@ -15,7 +15,7 @@ api = tweepy.API(auth)
 def main():
     followers = api.followers_ids()
 
-    msg = "You have %i followers" % len(followers)
+    msg = "You have %-6i followers" % len(followers)
 
     lcd.write(msg)
 
