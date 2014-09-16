@@ -22,7 +22,7 @@ sudo apt-get install pip
 sudo pip install tweepy dot3k
 ```
 
-Also see dot3k's requirements at [pimoroni/dot3k](https://github.com/pimoroni/dot3k/tree/master/python)
+Also see dot3k's requirements at [pimoroni/dot3k](https://github.com/pimoroni/dot3k/blob/master/python/README.md)
 
 #### Python 3
 
