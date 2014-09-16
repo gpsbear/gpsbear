@@ -24,7 +24,7 @@ sudo pip install tweepy dot3k
 
 Also see dot3k's requirements at [pimoroni/dot3k](https://github.com/pimoroni/dot3k/tree/master/python)
 
-### Python 3
+#### Python 3
 
 Unfortunately the dependencies don't support Python 3. Blame `smbus` and `tweepy`. I'm sorry.
 
