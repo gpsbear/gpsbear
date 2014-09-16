@@ -28,6 +28,10 @@ Also see dot3k's requirements at [pimoroni/dot3k](https://github.com/pimoroni/do
 
 Unfortunately the dependencies don't support Python 3. Blame `smbus` and `tweepy`. I'm sorry.
 
+## Twitter Application Setup
+
+Set up a Twitter application at [dev.twitter.com](https://dev.twitter.com/) - see instructions at [raspi.tv](http://raspi.tv/2013/how-to-create-a-twitter-app-on-the-raspberry-pi-with-python-tweepy-part-1)
+
 ## Licence
 
 Unless otherwise specified, everything in this repository is covered by the following licence:
