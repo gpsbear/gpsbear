@@ -1,4 +1,5 @@
 import tweepy
+from dot3k import lcd
 from auth import (
     consumer_key,
     consumer_secret,
@@ -14,7 +15,9 @@ api = tweepy.API(auth)
 def main():
     followers = api.followers_ids()
 
-    print("You have %i followers" % len(followers))
+    msg = "You have %i followers" % len(followers)
+
+    lcd.write(msg)
 
 if __name__ == '__main__':
     main()
