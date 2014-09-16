@@ -32,6 +32,8 @@ Unfortunately the dependencies don't support Python 3. Blame `smbus` and `tweepy
 
 Set up a Twitter application at [dev.twitter.com](https://dev.twitter.com/) - see instructions at [raspi.tv](http://raspi.tv/2013/how-to-create-a-twitter-app-on-the-raspberry-pi-with-python-tweepy-part-1)
 
+Then copy the relevant API keys in to the [auth.py](twittertron/auth.py)
+
 ## Licence
 
 Unless otherwise specified, everything in this repository is covered by the following licence:
