@@ -2,6 +2,10 @@ import twitter
 import picamera
 from datetime import datetime
 from random import choice
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(17, GPIO.IN, GPIO.PUD_UP)
 
 messages = [
     "Don't Touch me!",
@@ -19,6 +23,7 @@ def main():
         img = '/home/pi/twitter/%s.jpg' % timestamp
         message = choice(messages)
         camera.annotate_text = message
+        GPIO.wait_for_edge(17, GPIO.FALLING)
         camera.capture(img)
         camera.stop_preview()
         twitter.tweet(message, img)
