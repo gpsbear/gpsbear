@@ -16,10 +16,14 @@ def follower_count():
 
     return len(followers)
 
+def tweet(text):
+    if len(text) <= 140:
+        api.update_status(text)
+    else:
+        print ("error text too long")
+
 def main():
-    followers = follower_count()
-
-    print("You have %-6i followers" % followers)
-
+    tweet("hello world from python")
+    
 if __name__ == '__main__':
     main()
