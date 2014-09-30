@@ -16,14 +16,18 @@ def follower_count():
 
     return len(followers)
 
-def tweet(text):
+def tweet(text, img=None):
     if len(text) <= 140:
-        api.update_status(text)
+        if img:
+            api.update_with_media(img, text)
+        else:
+            api.update_status(text)
     else:
         print ("error text too long")
 
 def main():
-    tweet("hello world from python")
+    img = "/home/pi/twitter/2014-09-30T13:25:45.793735.jpg"
+    tweet("hello world with a picture", img)
     
 if __name__ == '__main__':
     main()
